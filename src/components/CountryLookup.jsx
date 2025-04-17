@@ -9,7 +9,7 @@ export default function CountryLookup() {
     const getCountry = async () => {
       try {
         const response = await fetch(
-          `https://extreme-ip-lookup.com/json/?key=${process.env.AIzaSyC1iaiEkkLY4On8GXiPefuwlDFeUQVmrFI}`
+          `https://extreme-ip-lookup.com/json/?key=${process.env.NEXT_PUBLIC_IP_LOOKUP_KEY}`
         );
         if (!response.ok) {
           throw new Error('Network response was not ok');
